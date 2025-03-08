@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <div class=" bg-gray-800 p-6 mx-auto flex justify-center font-bold ">
+        <h1>Input element</h1>
+    </div>
+
+    <!-- box -->
+    <div class=" p-6 flex justify-center items-center  min-h-screen">
+        <div class="bg-slate-600 w-92 p-4 m-4">
+            <input type="number " id="weight" name="weight" value="" placeholder="Enter your weight (in kg)"
+                class="w-full mb-6  rounded-full bg-slate-400 p-4 outline-none " />
+            <input type="number " id="height" name="height" value="" placeholder="Enter your height (in cm)"
+                class="w-full mb-6  rounded-full bg-slate-400 p-4 outline-none " />
+            
+                <div class="flex justify-center ">
+                <button id="calculate" class="bg-blue-400 px-3 w-28 mb-6  mx-auto rounded-full" onClick="calculate()">Submit</button>
+            </div>
+
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
