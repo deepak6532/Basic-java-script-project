@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-900">
+
+    <div class="h-13  bg-slate-600 text-white  text-3xl text-center ">
+           <h1 class="">Calculator</h1>
+    </div>
+
+    <div class="h-131 w-100  mx-auto mt-4 rounded bg-slate-400">
+        <input type="text" 
+        class="w-90 h-15 bg-white  border-1 p-4 mt-5 ml-5 rounded-md border-1 outline-none text-right text-3xl"
+        id="display"
+        placeholder="Enter Values" >
+
+        <div class="w-90 h-16 p-2 mt-5 ml-5 bg-white  rounded border-1">
+            <button class="border-1 w-16 h-10   bg-slate-800 text-blue-500 text-2xl rounded-md text-bold mb-1 ml-4 shadow-sm shadow-blue-500  cursor-pointer hover:bg-slate-900" onclick="display.value = '' ">AC</button>
+            <button class="border-1 w-16 h-10 rounded-md text-bold  bg-slate-800 text-blue-500 text-2xl mb-1 ml-4 shadow-md shadow-blue-500 cursor-pointer hover:bg-slate-900"   onclick="display.value =  display.value.toString().slice(0,-1)">Del</button>
+            <button class="border-1 w-16 h-10 rounded-md text-bold  bg-slate-800 text-blue-500 text-2xl mb-1 ml-4 shadow-md shadow-blue-500 cursor-pointer hover:bg-slate-900"  onclick="display.value += '.' ">%</button>
+            <button class="border-1 w-16 h-10 rounded-md text-bold  bg-slate-800 text-blue-500 text-2xl mb-1 ml-4 shadow-lg shadow-blue-500 cursor-pointer hover:bg-slate-900"   onclick="display.value += '/' ">/</button>
+        </div>
+        <div class="w-90 h-16 p-2 mt-5 ml-5  rounded  bg-white border-1">
+            <button class="border-1 w-16 h-10 rounded-md  bg-slate-600 text-white text-2xl text-bold mb-1 ml-4  cursor-pointer hover:bg-slate-700   "   onClick="document.getElementById('display').value += '7'">7</button>
+            <button class="border-1 w-16 h-10 rounded-md  bg-slate-600 text-white text-2xl text-bold mb-1 ml-4    cursor-pointer hover:bg-slate-700   "  onClick="document.getElementById('display').value += '8'">8</button>
+            <button class="border-1 w-16 h-10 rounded-md  bg-slate-600 text-white text-2xl text-bold mb-1 ml-4    cursor-pointer hover:bg-slate-700  "   onClick="document.getElementById('display').value += '9'">9</button>
+            <button class="border-1 w-16 h-10 rounded-md  bg-slate-800 text-blue-500 text-2xl text-bold mb-1 ml-4   shadow-lg shadow-blue-500  cursor-pointer hover:bg-slate-900"   onClick="document.getElementById('display').value += '*'">*</button>
+        </div>
+        <div class="w-90 h-16 p-2 mt-5 ml-5  rounded border-1 bg-white ">
+            <button class="border-1 w-16 h-10 rounded-md text-bold    bg-slate-600 text-white text-2xl   mb-1 ml-4  cursor-pointer hover:bg-slate-700 " onClick="document.getElementById('display').value += '4'" >4</button>
+            <button class="border-1 w-16 h-10 rounded-md text-bold  bg-slate-600 text-white text-2xl   mb-1 ml-4  cursor-pointer hover:bg-slate-700 "   onClick="document.getElementById('display').value += '5'">5</button>
+            <button class="border-1 w-16 h-10 rounded-md text-bold    bg-slate-600 text-white text-2xl   mb-1 ml-4  cursor-pointer hover:bg-slate-700 " onClick="document.getElementById('display').value += '6'" >6</button>
+            <button class="border-1 w-16 h-10 rounded-md text-bold     bg-slate-800 text-blue-500 text-2xl   mb-1 ml-4  shadow-lg shadow-blue-500  cursor-pointer hover:bg-slate-900" onClick="document.getElementById('display').value += '-'" >-</button>
+        </div>
+        <div class="w-90 h-16 p-2 mt-5 ml-5  rounded border-1 bg-white ">
+            <button class="border-1 w-16 h-10  rounded-md text-bold   bg-slate-600 text-white text-2xl mb-1 ml-4  cursor-pointer hover:bg-slate-700 " onClick="document.getElementById('display').value += '1'">1</button>
+            <button class="border-1 w-16 h-10  rounded-md text-bold   bg-slate-600 text-white text-2xl mb-1 ml-4 cursor-pointer hover:bg-slate-700  " onClick="document.getElementById('display').value += '2'">2</button>
+            <button class="border-1 w-16 h-10  rounded-md text-bold   bg-slate-600 text-white text-2xl mb-1 ml-4 cursor-pointer hover:bg-slate-700  " onClick="document.getElementById('display').value += '3'">3</button>
+            <button class="border-1 w-16 h-10  rounded-md text-bold    bg-slate-800 text-blue-500 text-2xl mb-1 ml-4  shadow-lg shadow-blue-500  cursor-pointer hover:bg-slate-900" onClick="document.getElementById('display').value += '+'">+</button>
+        </div>
+        <div class="w-90 h-16 p-2 mt-5 ml-5  rounded border-1 bg-white">
+            <button class="border-1 w-18 h-10 rounded-md text-bold   bg-slate-600 text-white text-2xl   mb-1 ml-4 cursor-pointer hover:bg-slate-700 " onClick="document.getElementById('display').value += '00'">00</button>
+            <button class="border-1 w-18 h-10 rounded-md text-bold   bg-slate-600 text-white text-2xl  mb-1 ml-4  cursor-pointer hover:bg-slate-700  "  onClick="document.getElementById('display').value += '0'">0</button>
+            <!-- <button class="border-1 w-16 h-10 rounded-md text-bold   bg-slate-600 text-white text-2xl  mb-1 ml-4"  onClick="document.getElementById('display').value += '.'" >.</button> -->
+            <button class="border-1 w-30 h-11 rounded-md text-bold    bg-slate-800 text-blue-500 text-2xl  mb-1 ml-8  shadow-lg shadow-blue-500  cursor-pointer hover:bg-slate-900"   value="=" onclick="display.value = eval(display.value)">=</button>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
