@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class=" gradient bg-gradient-to-l to-indigo-400 from-indigo-500"> 
+
+
+    <div class="container h-130  w-200  bg-[#131315] border-2 rounded-xl mx-auto  mt-14">
+
+
+        <div class=" h-20 w-150 m-4  ml-16 text-4xl flex items-center font-medium text-white">
+            TO<span class="text-[#775ad9]">DO.</span>
+            
+
+        </div>
+
+        <div class="h-100 w-180  mx-auto flex justify-around">
+            <div class=" bg-[#19181d] text-white font-medium flex flex-col items-center text-5xl gap-7 m-5 h-90 w-40  rounded-xl">
+                <p>T</p>
+                <p>O</p>
+                <p class="text-[#775ad9]">D</p>
+                <p class="text-[#775ad9]">O</p>
+                <p class="text-4xl">List</p>
+                
+            </div>
+
+            <div class="h-90 w-120 bg-[#19181d]  m-5 rounded-xl">
+
+                <input type="text" 
+                class="border-2 border-white w-80  h-12 ml-10 mt-5 pl-5 text-lg rounded-md text-white"
+                id="task"
+                placeholder="Add Task">
+
+                <button 
+                class="w-20 h-11  bg-[#775ad9] text-black text-2xl font-bold ml-2 mt-6 rounded-md cursor-pointer"
+                id="add"
+                Onclick="add()">
+                Add</button>
+
+                <hr class="w-110 h-1 ml-5 bg-blue-600 border-none mt-5">
+
+                <div class="w-80  h-12 pl-5 text-white text-2xl border-white ml-10 mt-2 rounded-md  item  flex flex-col" id="item">
+                </div>
+                <!-- <div class="w-80  h-12 pl-5 border-2 text-white text-2xl border-white ml-10 mt-2 rounded-md  item  flex flex-col" id="item">
+                </div> -->
+                <!-- <div class="w-80  h-12 pl-5 border-2  border-white ml-10 mt-2 rounded-md ">
+                </div>
+                <div class="w-80  h-12 pl-5 border-2  border-white ml-10 mt-2 rounded-md ">
+                </div> -->
+               
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="script2.js"></script>
+</body>
+</html>
