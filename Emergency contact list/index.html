@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Contact list</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#a91079]">
+
+
+<div class="container h-120 w-200 border-2 mx-auto mt-20 bg-[#2e0249] rounded-xl border-none  flex justify-around ">
+
+    <div class="container h-100 w-60 border-2 border-[#a91079]   rounded-xl mt-10">
+        <h1 class="text-white text-center text-4xl font-medium font-mono display-block">Emergency</h1>
+        <h3 class="text-white ml-7 text-3xl">Contact<span class="text-[#a91079]  text-3xl font-medium "> List</span></h3>
+
+        <hr class="border-2 border-[#] w-40 mt-5 mx-auto">
+
+        <div id="list" class="text-xl text-black ml-2 mt-2  text-white " >
+
+            <!-- <p id="para"> </p> -->
+
+        </div>
+
+    </div>
+
+    <div class="container bg-white h-100 w-110 border-2 border-white rounded-xl mt-10 ">
+
+        <input type="text" class="border-b-3  border-[#a91079]  pl-2 w-90 h-12 mt-10 ml-10 rounded outline-none placeholder:text-xl" 
+        placeholder="Enter Name"
+        id="name">
+
+        <input type="text" class="border-b-3  border-[#a91079]  pl-2 w-90 h-12 mt-8 ml-10 rounded outline-none placeholder:text-xl " 
+        placeholder="Enter Number"
+        id="number">
+
+ 
+
+        <button class=" p-2 w-30 text-white  bg-[#a91079] text-black mt-10 ml-10 rounded outline-none  cursor-pointer shadow-xl shadow-[#a91079]-500/50 "
+        id="addlist"
+        onclick="addnumber()">Add To List</button>
+
+        <button class=" p-2 w-30 text-white  bg-[#a91079] text-black mt-10 ml-28 rounded outline-none  cursor-pointer shadow-xl shadow-[#a91079]-500/50 "
+        id="showlist"
+        onclick="showlist()">Show List</button>
+
+
+        <!-- <div id="contactListContainer" class="text-2xl text-black "></div> -->
+        <div id="list" class="text-2xl text-black "></div>
+    </div>
+
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
